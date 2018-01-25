@@ -69,7 +69,7 @@ var Square = /** @class */ (function () {
             this.piece.SetObject($('<img />', {
                 id: (this.x).toString() + (this.y).toString() + "Img",
                 "class": "PieceImage",
-                src: "images/" + color + "_" + this.piece.GetName() + ".png",
+                src: "./images/" + color + "_" + (this.piece.GetName()).toLowerCase() + ".png",
                 alt: color + "_" + this.piece.GetName()
             }));
             this.piece.GetObject().appendTo("#" + s);
