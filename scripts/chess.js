@@ -70,8 +70,9 @@ var Square = /** @class */ (function () {
                 id: (this.x).toString() + (this.y).toString() + "Img",
                 "class": "PieceImage",
                 src: "./images/" + color + "_" + (this.piece.GetName()).toLowerCase() + ".png",
-                alt: color + "_" + this.piece.GetName()
+                alt: color + "_" + (this.piece.GetName()).toLowerCase()
             }));
+            console.log("./images/" + color + "_" + (this.piece.GetName()).toLowerCase() + ".png");
             this.piece.GetObject().appendTo("#" + s);
             this.piece.GetObject().draggable({});
         }
